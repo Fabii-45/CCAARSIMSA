@@ -1,0 +1,33 @@
+= SUJET SIMSA : Tour de France
+
+== Remarques et consignes
+ - pour faciliter le débugage nous avons retenu l'approche JSP plutôt que Thymeleaf
+ - vous devez utiliser des DTOs
+ - les fetch EAGER sont interdits
+ - la gestion des dates peut vous poser des problèmes. A noter que la classe LocalDate fournit une méthode statique _parse_ qui prend en entrée au format 'YYYY-MM-DD'. Et au pire vous pouvez utiliser des String.
+
+== Sujet
+
+Vous mettez en place le SI d’une course cycliste.
+
+La page d'accueil affiche la liste des équipes et la liste des étapes, et fournit un lien pour aller vers les détails (et la gestion de chaque équipe / étape).
+
+Il y a des équipes composées de cyclistes (nom, prénom). Chaque équipe a un sponsor (qui lui donne son nom; en d'autres termes c'est juste le nom de l'équipe). Chaque équipe a un leader (un des cyclistes).
+
+On connaît la liste des étapes (date, lieu de départ, lieu d’arrivée, longueur, type: classique / contre la montre / montagne). Pour chaque étape on a un classement (temps de parcours en secondes de chaque cycliste). On suppose qu'il n'y a pas d'abandon (tout le monde a un temps).
+
+On ne peut saisir les classements que lorsque toutes les étapes et toutes les équipes sont saisies.
+
+Sur la page d'accueil on affiche le classement général, à condition que la course cycliste soit finie (tous les classements de toutes les étapes sont renseignés).
+
+== Tâches à réaliser
+Coder les parties manquantes ou incomplètes :
+
+- Entities
+- Dtos
+- names et values manquantes dans les JSP (cf balises <--! TODO -->)
+- Controller (cf TODOS)
+- Facade
+- insert-data.sql : peupler a minima les _types d'étapes_
+
+
